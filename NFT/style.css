@@ -1,0 +1,109 @@
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Colors */
+  /* primary */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /* neutral */
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+}
+
+html {
+  /* makes 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "outfit", sans-serif;
+  background: var(--main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#card {
+  background: var(--card-bg);
+  border-radius: 1rem;
+  margin-top: 20rem;
+  padding: 2.8rem;
+  /* box-shadow: 10px 10px var(--soft-blue), -10px 10px var(--soft-blue),
+    20px 20px black, -20px 20px black; */
+}
+
+.card-img img {
+  width: 45rem;
+  height: 45rem;
+  border-radius: 1rem;
+}
+
+.view {
+  background: var(--cyan);
+}
+
+.card-text {
+  margin-top: 1.5rem;
+  line-height: 2;
+}
+
+.card-text h1 {
+  color: white;
+}
+
+.card-text p {
+  color: rgb(139, 172, 217);
+}
+
+.card-text-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.card-text-flex p:nth-child(1) {
+  color: var(--cyan);
+}
+
+#card-line {
+  border: 1px solid var(--line);
+  margin: 3rem 0;
+}
+
+.card-last-text {
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.card-last-text img {
+  width: 5rem;
+  height: 5rem;
+  border: 0.2rem solid white;
+  border-radius: 50%;
+}
+
+.card-last-text p {
+  align-self: center;
+  margin-left: 2rem;
+  color: rgb(139, 172, 217);
+}
+
+.hover:hover {
+  color: var(--cyan);
+}
